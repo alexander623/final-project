@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <title>Game Haven - Orders</title> 
+        <link rel="icon" href="images/icon_256x256.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+        html {
+            background-image: url(images/IMG_0706.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+            #logo {
+                width: 100%;
+                min-width: 300px;
+                position: relative;
+                margin: 0 auto;
+                max-width: 630px;
+                height: 350px;
+                border-radius: 1000px;
+                -moz-border-radius: 1000px;
+                display: block;
+            }
+            
+            #horror {
+
+                padding-right: 1em;
+            }
+            h1 {
+                font-size: 1.75em; /* 28 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            }
+
+            h2 {
+                font-size: 1.5em; /* 24 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+
+            h3 {
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+            p { 
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding-left: 5px;
+                padding-right: 5px;
+                color: limegreen;
+            }
+            a {
+                color: limegreen;
+            }
+    </style>
+
+            <figcaption>Game Haven - Survival</figcaption>
+        <img id="logo" src="images/IMG_0707.png"/>
+        
+        <header>
+        
+        <audio autoplay controls loop hidden>
+            <source src="audio/survival.mp3" type="audio/mpeg">   
+        </audio> 
+        </header> 
+        
+        
+        
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="Horror_games.html" >Horror</a></li>
+                <li><a href="Metroidvania_games.html" >Metroidvania</a></li>
+                <li><a href="Survival_games.html" class="current">Survival</a></li>
+                <li><a href="Order.html" >Order</a></li>
+                <li><a href="Support.html" class="lastitem">Support</a></li>
+            </ul> 
+        </nav>
+    
+    
+<title>Survey Data</title>
+<style>
+    dt {
+        font-weight: bold;
+        color: limegreen;
+    }
+    dd {
+        color: limegreen
+    }
+</style>
+<script type="text/javascript">
+//<![CDATA[
+var decode = function ( text ) {
+    text = text.replace(/\+/g, " ");
+    text = text.replace(/%[a-fA-F0-9]{2}/g, 
+        function ( text ) {
+            return String.fromCharCode( "0x" + text.substr(1,2));
+        }
+    );
+    return text;
+}
+    
+var display_data = function () {
+    var query = location.search.replace("?", "");
+    if ( query == "" ) return;
+    
+    var fields = query.split("&");
+    
+    if ( fields.length == 0 ) {
+        document.write("<p>No data was submitted.</p>");
+    } else {
+        document.write("<dl>");
+        var field_parts;
+        for ( var i in fields ) {
+            field_parts = fields[i].split("=");
+            field_parts[0] = decode( field_parts[0] );
+            field_parts[1] = decode( field_parts[1] );
+            document.write("<dt>" + field_parts[0] + "</dt>");
+            document.write("<dd>" + field_parts[1] + "</dd>");
+        }
+        document.write("</dl>");
+    }
+}
+//]]>
+</script>
+</head>
+
+<body>
+    <h1>Survey Data</h1>
+    <script>display_data();</script>
+</body>
+</html>
