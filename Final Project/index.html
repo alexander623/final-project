@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!-- alexander jacob, siu, 08/28/2025, 08/28/2025 -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Haven</title> 
+        <link rel="icon" href="images/icon_256x256.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+        html {
+            background-image: url(images/IMG_0706.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+            #logo {
+                width: 100%;
+                min-width: 300px;
+                position: relative;
+                margin: 0 auto;
+                max-width: 630px;
+                height: 350px;
+                border-radius: 1000px;
+                -moz-border-radius: 1000px;
+                display: block;
+            }
+
+            #horror {
+
+                padding-right: 1em;
+            }
+            h1 {
+                font-size: 1.75em; /* 28 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            }
+
+            h2 {
+                font-size: 1.5em; /* 24 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+
+            h3 {
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+            p { 
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding-left: 5px;
+                padding-right: 5px;
+                color: limegreen;
+            }
+            a {
+                color: limegreen;
+            }
+            .bike1 {
+            width: 100%;
+            min-width: 300px;
+            position: relative;
+            margin: 0 auto;
+            max-width: 630px;
+            height: 350px;
+            display: block;
+            }
+
+            .bike1 img {
+             width: 100%;
+             min-width: 300px;
+             max-width: 600px;
+             border: 2px solid #B5D3E7;
+             margin: 0;
+             overflow: hidden;
+             padding: 0;
+             border-radius: 1000px;
+             -moz-border-radius: 1000px;
+             position: absolute;
+             left: 10px; 
+             top: 10px; 
+             opacity: 1;
+             max-width: 1024px;
+             height: 350px;
+            display: block;
+            }
+
+            .bike1 .bike2{
+                z-index: 9999;
+                transition: opacity 0.5s linear;
+                cursor: pointer;
+                display: block;
+            }
+            .bike1:hover > .bike2 {
+                opacity: 0;
+                display: block;
+            }
+
+
+            
+        </style>
+        
+    </head>
+
+    <body>
+        <figcaption>Game Haven</figcaption>
+        <figure id="horror" class="bike1">
+            <img class="bike2" src="images/IMG_0707.png"/>
+            <img  class="bike1" src="images/IMG_07077.png"/>
+        </figure>
+        
+        <header>
+        
+        <audio autoplay controls loop hidden>
+            <source src="audio/main.mp3" type="audio/mpeg">   
+        </audio> 
+        </header> 
+        
+        
+        
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li> 
+                <li><a href="Horror_games.html" >Horror</a></li>
+                <li><a href="Metroidvania_games.html" >Metroidvania</a></li>
+                <li><a href="Survival_games.html" >Survival</a></li>
+                <li><a href="Order.html" >Order</a></li>
+                <li><a href="Support.html" class="lastitem">Support</a></li>
+            </ul> 
+        </nav>
+    
+    
+        <h1>Welcome to the Game Haven. Here we have three genres to choose from!</h1>
+        
+            <h2><a href="index.htm" class="current">Horror</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/IMG_0708.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        The horror game genre focuses on creating fear, tension, and suspense by placing players in unsettling environments filled with threats they may not fully understand or be able to overcome. These games often use eerie atmosphere, limited resources, and psychological elements to evoke a sense of vulnerability, while stories typically revolve around uncovering dark mysteries or surviving terrifying encounters. The goal is to immerse players in an experience where dread, anticipation, and the unknown drive the emotional impact.
+                    </p>
+                </div>
+            </div>
+            <h2><a href="Metroidvania_games.html" >Metroidvania</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/Metroidvania.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        The Metroidvania game genre is defined by large, interconnected maps that players gradually explore by gaining new abilities, tools, or powers that unlock previously inaccessible areas. These games emphasize exploration, backtracking, and discovery, creating a sense of progression as the world opens up in response to the player’s growth. Combat, platforming, and environmental puzzles often blend together, encouraging players to master both the mechanics and the layout of the world.
+                    </p>
+                </div>
+            </div>
+            <h2><a href="Survival_games.html" >Survival</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/survival.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        The survival game genre centers on keeping the player alive in harsh, often unpredictable environments by managing limited resources such as food, water, shelter, and tools. Players must gather materials, craft essential items, and face threats ranging from wildlife and weather to other players or hostile creatures. These games emphasize strategic decision-making, adaptation, and long-term planning, creating tension through scarcity and the constant risk of losing progress.
+                    </p>
+                </div>
+            </div>
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+    </body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<!-- alexander jacob, siu, 08/28/2025, 08/28/2025 -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Haven - Survival</title> 
+        <link rel="icon" href="images/icon_256x256.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+        html {
+            background-image: url(images/survivalBackground.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+            #logo {
+                width: 100%;
+                min-width: 300px;
+                position: relative;
+                margin: 0 auto;
+                max-width: 630px;
+                height: 350px;
+                border-radius: 1000px;
+                -moz-border-radius: 1000px;
+                display: block;
+            }
+
+            #horror {
+
+                padding-right: 1em;
+            }
+            h1 {
+                font-size: 1.75em; /* 28 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            }
+
+            h2 {
+                font-size: 1.5em; /* 24 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+
+            h3 {
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+            p { 
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding-left: 5px;
+                padding-right: 5px;
+                color: limegreen;
+            }
+            a {
+                color: limegreen;
+            }
+
+            
+        </style>
+        
+    </head>
+
+    <body>
+        <figcaption>Game Haven - Survival</figcaption>
+        <img id="logo" src="images/IMG_0707.png"/>
+        
+        <header>
+        
+        <audio autoplay controls loop hidden>
+            <source src="audio/survival.mp3" type="audio/mpeg">   
+        </audio> 
+        </header> 
+        
+        
+        
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="Horror_games.html" >Horror</a></li>
+                <li><a href="Metroidvania_games.html" >Metroidvania</a></li>
+                <li><a href="Survival_games.html" class="current">Survival</a></li>
+                <li><a href="Order.html" >Order</a></li>
+                <li><a href="Support.html" class="lastitem">Support</a></li>
+            </ul> 
+        </nav>
+    
+    
+        <h1>Welcome to the Game Havens Survival Section!</h1>
+        
+            <h2><a href="https://www.youtube.com/watch?v=_BqgJ9nW468" class="current">Grounded - $39.99</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/grounded.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        Grounded is a cooperative survival-adventure game where players are shrunk to the size of an ant and must survive and explore a dangerous backyard filled with giant insects, scavenging resources to build bases, craft tools, manage hunger/thirst, and uncover the mystery behind their shrunken state to return to normal size. It blends crafting, exploration, base-building, and combat against hostile bugs in a miniaturized world, playable solo or with friends
+                    </p>
+                </div>
+            </div>
+            <h2><a href="https://www.youtube.com/watch?v=fXP4_2qRHng" >Dont Starve - $9.99</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/DontStarve.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        Don't Starve is a challenging wilderness survival game with a unique gothic, Tim Burton-esque art style where players control Wilson, a scientist trapped in a mysterious world called "The Constant" by a demon. The core gameplay involves exploring, gathering resources, crafting tools, building shelter, and managing hunger, sanity, and health to survive as long as possible against surreal creatures and harsh environments, with death often being permanent (roguelike). Players must learn to exploit the environment and its inhabitants, progressing from basic tools to complex scientific and magical contraptions to uncover the world's secrets.
+                    </p>
+                </div>
+            </div>
+            <h2><a href="https://www.youtube.com/watch?v=MmB9b5njVbA" >Minecraft - $29.99</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/minecraft.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        Minecraft is a popular sandbox game where players explore a blocky, procedurally generated 3D world, gathering resources, crafting tools, and building structures, with gameplay focused on creativity, exploration, and survival against hostile creatures in different modes like Creative (unlimited building) and Survival (resource management, health, hunger)
+                    </p>
+                </div>
+            </div>
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+    </body>
+
+</html>

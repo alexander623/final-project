@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!-- alexander jacob, siu, 08/28/2025, 08/28/2025 -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Haven - Orders</title> 
+        <link rel="icon" href="images/icon_256x256.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+        html {
+            background-image: url(images/IMG_0706.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+            #logo {
+                width: 100%;
+                min-width: 300px;
+                position: relative;
+                margin: 0 auto;
+                max-width: 630px;
+                height: 350px;
+                border-radius: 1000px;
+                -moz-border-radius: 1000px;
+                display: block;
+            }
+
+            #horror {
+
+                padding-right: 1em;
+            }
+            h1 {
+                font-size: 1.75em; /* 28 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            }
+
+            h2 {
+                font-size: 1.5em; /* 24 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+
+            h3 {
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+            p { 
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding-left: 5px;
+                padding-right: 5px;
+                color: limegreen;
+            }
+            a {
+                color: limegreen;
+            }
+            label {
+			 color: limegreen;
+			 float: left;
+			 width: 8em;
+			 font-weight: bold;
+			 text-align: left;
+		    }
+		    input {
+			 width: 15em;
+			 margin: 0 0 .5em 1em;
+		    }
+		    #button, #reset {
+			 width: 7em;
+			 background-color: silver;
+			 box-shadow: 2px 2px 0 limegreen; }
+		    #button {
+			 margin-left: 9em;
+		    }
+            feildset{
+                border: 0;
+            }
+            .options{
+                color: limegreen;
+            }
+
+            
+        </style>
+        
+    </head>
+
+    <body>
+        <figcaption>Game Haven - Order Form</figcaption>
+        <img id="logo" src="images/IMG_0707.png"/>
+        
+        <header>
+        
+        <audio autoplay controls loop hidden>
+            <source src="audio/main.mp3" type="audio/mpeg">   
+        </audio> 
+        </header> 
+        
+        
+        
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li> 
+                <li><a href="Horror_games.html" >Horror</a></li>
+                <li><a href="Metroidvania_games.html" >Metroidvania</a></li>
+                <li><a href="Survival_games.html" >Survival</a></li>
+                <li><a href="Order.html" >Order</a></li>
+                <li><a href="Support.html" class="lastitem">Support</a></li>
+            </ul> 
+        </nav>
+    
+    
+        <h1>Welcome to the Game Havens Order Form, here you can place an order.</h1>
+        
+        <form name="myform" action="survey_data.html" method="get">
+	           
+            <label for="Email">Email address:</label>
+            <input type="email" name="Email" id="email" required><br>
+            <label for="Phonenumber">Phone Number:</label>
+            <input type="text" name="Phone Number" id="Phonenumber" required placeholder="10 digits" pattern="\d{10}" title="Must be 9999999999"><br>
+            <label for="Card Number">Card Number:</label>
+            <input type="Password" name="Card Number" id="Card Number" required placeholder="16 digits" pattern="\d{16}" title="Must be 16 digits"><br>
+            <label for="Experation Date">Experation Date:</label>
+            <input type="month" name="Date" id="Experation date" required><br>
+            <label for="Security code">Sercurity Code:</label>
+            <input type="text" name="Security Code" id="Security code" required placeholder="3 digits" pattern="\d{3}" title="Must be 3 digits"><br>
+ 
+            
+            <fieldset>
+                <div class="form-group options">Game Order (Select 1):<br>
+                    <div class="col-md-6"><br>
+                        <input type="radio" name="Game" value="Alien Isolation - $23.79" required />Alien Isolation<br>
+                        <input type="radio" name="Game" value="Silent Hill 2 (Remake) - $39.68" />Silent Hill 2 (Remake)<br>
+                        <input type="radio" name="Game" value="Outlast - $21.49" />Outlast<br>
+                        <input type="radio" name="Game" value="Hollow Knight Voidheart Edition - $14.99" />Hollow Knight Voidheart Edition<br>
+                        <input type="radio" name="Game" value="Hollow Knight Silksong - $19.99" />Hollow Knight Silksong<br>
+                        <input type="radio" name="Game" value="Ender Lilies: Quietus of the Knights - $25.99" />Ender Lilies: Quietus of the Knights<br>
+                        <input type="radio" name="Game" value="Grounded - $39.99" />Grounded<br>
+                        <input type="radio" name="Game" value="Dont Starve - $9.99" />Dont Starve<br>
+                        <input type="radio" name="Game" value="Minecraft - $29.99" />Minecraft
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" name="button" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset"> 
+        </form>   
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+    </body>
+
+</html>

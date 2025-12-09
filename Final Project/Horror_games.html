@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<!-- alexander jacob, siu, 08/28/2025, 08/28/2025 -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Game Haven - Horror</title> 
+        <link rel="icon" href="images/icon_256x256.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+        html {
+            background-image: url(images/horror_background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+            #logo {
+                width: 100%;
+                min-width: 300px;
+                position: relative;
+                margin: 0 auto;
+                max-width: 630px;
+                height: 350px;
+                border-radius: 1000px;
+                -moz-border-radius: 1000px;
+                display: block;
+            }
+
+            #horror {
+
+                padding-right: 1em;
+            }
+            h1 {
+                font-size: 1.75em; /* 28 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            }
+
+            h2 {
+                font-size: 1.5em; /* 24 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+
+            h3 {
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding: 10px;
+                color: limegreen;
+            } 
+            p { 
+                font-size: 1.125em; /* 18 ÷ 16 */ 
+                padding-left: 5px;
+                padding-right: 5px;
+                color: limegreen;
+            }
+            a {
+                color: limegreen;
+            }
+
+            
+        </style>
+        
+    </head>
+
+    <body>
+        <figcaption>Game Haven - Horror</figcaption>
+        <img id="logo" src="images/IMG_0707.png"/>
+        
+        <header>
+        
+        <audio autoplay controls loop hidden>
+            <source src="audio/horror.mp3" type="audio/mpeg">   
+        </audio> 
+        </header> 
+        
+        
+        
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="Horror_games.html" class="current">Horror</a></li>
+                <li><a href="Metroidvania_games.html" >Metroidvania</a></li>
+                <li><a href="Survival_games.html" >Survival</a></li>
+                <li><a href="Order.html" >Order</a></li>
+                <li><a href="Support.html" class="lastitem">Support</a></li>
+            </ul> 
+        </nav>
+    
+    
+        <h1>Welcome to the Game Havens Horror Section!</h1>
+        
+            <h2><a href="https://www.youtube.com/watch?v=7h0cgmvIrZw" class="current">Alien Isolation - $23.79</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/alien.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        Alien: Isolation is a survival horror game set in the Alien universe, where players control Amanda Ripley, the daughter of Ellen Ripley, as she investigates her mother’s disappearance. The game emphasizes stealth and tension, forcing players to avoid a nearly unstoppable Xenomorph while navigating a dark, claustrophobic space station. With limited resources and an unpredictable enemy, the game creates a constant sense of fear and suspense, focusing on survival and strategic evasion rather than combat.
+                    </p>
+                </div>
+            </div>
+            <h2><a href="https://www.youtube.com/watch?v=M_WNxWctGsk">Silent Hill 2 (Remake) - $39.68</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/Silent_hill.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                       Silent Hill 2 (remake) is a modern reimagining of the 2001 psychological horror classic — you play as James Sunderland, a widower drawn back to Silent Hill after receiving a mysterious letter from his deceased wife Mary, who claims to be waiting for him there. The remake rebuilds the game on Unreal Engine 5 with updated graphics, an over‑the‑shoulder camera, enhanced combat and exploration systems, and expanded environments — all while preserving the haunting story, psychological tension and eerie atmosphere that made the original memorable.
+                    </p>
+                </div>
+            </div>
+            <h2><a href="https://www.youtube.com/watch?v=ZkSydla4sxo" >Outlast - $21.49</a></h2>
+            <div class="img-description-block" style="display:flex; align-items:flex-start;">
+                <div style="flex:1;">
+                    <img id="horror" src="images/outlast.png" alt="Description of image" style="max-width:70%; height:auto;">
+                </div>
+
+                <div style="flex:1;">
+                    
+                    <p>
+                        Outlast is a first-person survival horror game in which players take on the role of investigative journalist Miles Upshur, who explores the abandoned Mount Massive Asylum. With no weapons to defend himself, players must rely on stealth, hiding, and a camcorder with night vision to survive against deranged inmates and uncover the asylum’s dark secrets. The game emphasizes tension, fear, and helplessness, creating a relentless and terrifying atmosphere.
+                    </p>
+                </div>
+            </div>
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+    </body>
+
+</html>
